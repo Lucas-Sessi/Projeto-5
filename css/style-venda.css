@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+.clear{
+    clear: both;
+
+}
+
+
+            /* header: logo e menu */
+
+
+header{
+    padding: 20px 2% 35px 2%;
+    height: 120px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+}
+
+header nav.desktop{
+    float: right;
+    position: relative;
+    top: 27px;
+}
+
+.desktop ul{
+    list-style-type: none;
+    padding-right: 40px;
+}
+
+.desktop ul li{
+    float: left;
+    font-size: 23px;
+    padding: 0 40px;
+    font-style: italic;
+}
+
+.desktop ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.mobile{
+    float: right;
+    width: 32px;
+    height: 32px;
+    background-image: url('/imagens/menu-aberto.png');
+    cursor: pointer;
+    background-size: 100% 100%;
+    margin-top: 40px;
+    display: none;
+}
+.mobile ul{
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: white;
+    text-align: center;
+    z-index: 999;
+    border-bottom: 4px solid #EB2D2D;
+}
+.mobile ul li{
+    list-style-type: none;
+    font-size: 23px;
+    padding: 20px 0;
+    font-style: italic;
+}
+.mobile ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+        /* Section de venda */
+
+
+section.venda{
+    min-height: 90%;
+    padding: 90px 2%;
+}
+.container-venda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-venda h2{
+    width: 20%;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.linha{
+    width: calc(100% / 3);
+    height: 3px;
+    background-color: black;
+}
+
+.content-venda{
+    margin-top: 40px;
+}
+
+.sidebar{
+    float: left;
+    width: 30%;
+}
+
+.search1{
+    width: 100%;
+    max-width: 300px;
+}
+.search1 h2{
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+}
+
+.search1 .barra-preco{
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.barra-preco-fill{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 20px;
+    background: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
+    border-radius: 20px;
+}
+
+.pointer-barra{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -3px;
+    left: calc(30% - 13px);
+    cursor: pointer;
+    border-radius: 8px;
+    background: linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
+    border: 1px solid #777;
+}
+
+.valor-pesquisa{
+    margin-top: 8px;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+.search2{
+    margin-top: 40px;
+}
+
+.search2 h2{
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+}
+
+.form-venda-wraper{
+    margin-top: 10px;
+}
+
+.form-venda-wraper input[type=checkbox]{
+    display: none;
+}
+
+.form-venda-wraper label{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-venda-wraper input[type=checkbox]:checked + label > .circle{
+    display: block;
+}
+
+.circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: black;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    display: none;
+
+}
+
+.form-venda-wraper span{
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-vitrine{
+    float: left;
+    width: 70%;
+}
+
+.vitrine-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.vitrine-carros{
+    width: calc(95% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carros{
+    width: 90%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.info-carros{
+    width: 200px;
+    text-align: center;
+}
+.info-carros h3{
+    font-size: 20px;
+
+}
+.button-carros{
+    margin: 20px 0;
+    color: white;
+    font-style: italic;
+    width: 150px;
+    height: 40px;
+    background-color: #EB2D2D;
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+    border-bottom: 3px solid #B21E1E;
+}
+
+        /* Footer */
+
+footer{
+    padding: 40px 2%;
+    background-color: #252525;
+}
+nav.menu-footer{
+    float: left;
+}
+.container-footer p{
+    float: right;
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+}
+.menu-footer ul{
+    list-style-type: none;
+}
+.menu-footer ul li{
+    padding: 0 35px;
+    float: left;
+    font-size: 18px;
+}
+.menu-footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+
+        /* media screen */
+
+
+
+@media screen and (max-width: 830px){
+    section.banner{
+        background-size: cover;
+        background-position: 100% center;
+        height: 80vh;
+    }
+    nav.desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .mobile ul{
+        display: none;
+    }
+    nav.menu-footer{
+        display: none;
+    }
+    .container-vitrine{
+        float: left;
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+    .container-footer p{
+        float: none;
+    }
+}
+
+
+@media screen and (max-width: 580px){
+
+section.venda{
+    padding: 50px 2%;
+}
+.mobile ul{
+    width: 90%;
+    top: 90px;
+}
+header{
+    height: 90px;
+}
+.logo{
+    float: right;
+}
+.logo img{
+    margin: 0px 10px;
+    width: 140px;
+    height: auto;
+}
+.mobile{
+    float: left;
+    display: block;
+    margin: 10px 25px;
+}
+
+.sidebar{
+    width: 100%;
+    text-align: center;
+}
+
+.search1{
+    padding: 2%;
+    width: 100%;
+    display: inline-block;
+}
+
+.search2{
+    display: inline-block;
+    text-align: left;
+}
+
+.container-venda h2{
+    width: 64%;
+    font-size: 23px;
+
+}
+
+.linha{
+    width: 15%;
+    height: 3px;
+    background-color: black;
+}
+.veiculos-destaque h2{
+    width: 50%;
+}
+
+.container-vitrine{
+    margin-top: 20px;
+}
+
+.vitrine-container{
+    margin-top: 0;
+    padding: 0px 0;
+    flex-direction: column;
+}
+
+.vitrine-carros{
+    width: 100%;
+    padding: 10px 0;
+}
+}
