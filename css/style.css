@@ -58,7 +58,7 @@ header nav.desktop{
     float: right;
     width: 32px;
     height: 32px;
-    background-image: url('/imagens/menu-aberto.png');
+    background-image: url('../imagens/menu-aberto.png');
     cursor: pointer;
     background-size: 100% 100%;
     margin-top: 40px;
@@ -503,13 +503,17 @@ section.venda-single .info-veiculo{
 }
 
 .nav-galeria-wraper{
-    width: 200%;
+    /*
+        via js
+    */
 }
 
 .mini-img-wraper{
     float: left;
     padding: 9px;
-    width: calc(33.3% * (100 / 200));
+    /*
+        via js
+    */
 }
 
 .mini-img{
@@ -626,7 +630,7 @@ section.sobre{
         display: block;
     }
     .mobile ul{
-        display: none;
+        display: block;
     }
     nav.menu-footer{
         display: none;
@@ -662,7 +666,7 @@ section.sobre{
 
 @media screen and (max-width: 580px){
     .mobile ul{
-        width: 90%;
+        width: 100%;
         top: 90px;
     }
     header{

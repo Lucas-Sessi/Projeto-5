@@ -144,7 +144,7 @@ section.venda{
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%;
+    width: 0%;
     height: 20px;
     background: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
     border-radius: 20px;
@@ -155,7 +155,7 @@ section.venda{
     height: 26px;
     position: absolute;
     top: -3px;
-    left: calc(30% - 13px);
+    left: 0;
     cursor: pointer;
     border-radius: 8px;
     background: linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
